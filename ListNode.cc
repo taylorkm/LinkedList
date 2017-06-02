@@ -30,11 +30,9 @@ void reverse(ListNode*& t) {
 	prev = NULL;
 	cur = NULL;
 	next = t;
-	
-	int iter = 0;
 
 	// method 2
-	while (next && ++iter < 20) {		
+	while (next) {		
 		prev = cur;
 		cur = next;
 		next = cur->next;
